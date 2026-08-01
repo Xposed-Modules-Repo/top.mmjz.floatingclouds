@@ -18,7 +18,7 @@
 
 - **libxposed API 102**（`io.github.libxposed:api:102.0.0`，Apache-2.0）：LSPosed 现代 Hook 注入框架
 - **DexKit 静态扫描**（`org.luckypray:dexkit:2.2.0`，Apache-2.0）：通过 DkBridge / DexKitScanner 对微信 APK 进行 DEX 静态扫描，动态定位混淆类与方法
-- **resolver 声明式规则解析**：混淆类解析引擎（DexKit / 规则系统），避免硬编码类名
+- **resolver 声明式规则解析**：混淆类解析引擎（DexKit / 规则系统），硬编码类名与 DexKit 动态扫描混合定位
 
 ## 🧩 功能列表
 
