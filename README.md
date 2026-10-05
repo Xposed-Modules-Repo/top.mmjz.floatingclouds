@@ -1,4 +1,4 @@
-# 浮云 · FloatingClouds
+# 浮云
 
 > 📢 **交流群组**
 > - QQ 群①：`1031570092`（复制群号后 QQ 搜索加入）
@@ -17,7 +17,7 @@
 
 ## 📌 项目简介
 
-**FloatingClouds（浮云）** 是一个基于 **LSPosed** 框架的微信（`com.tencent.mm`）隐私增强 Xposed 模块（API 102），提供会话隐藏、联系人屏蔽、朋友圈净化、消息免打扰、VoIP 拦截等隐私增强功能。
+**FloatingClouds（浮云）** 微信密友模块。
 
 核心技术栈 / Core Tech Stack：
 
@@ -171,4 +171,4 @@
 
 ---
 
-<sub>浮云 · FloatingClouds — 让该消失的，安静消失。</sub>
+<sub>浮云 — 让该消失的，安静消失。</sub>
