@@ -9,7 +9,6 @@
 
 > 🙏 **特别感谢**：本项目基于 [Mingyueyixi/MaskWechat](https://github.com/Mingyueyixi/MaskWechat) 全量重构并继续开发而来，**已获得原作者授权**，衷心感谢原作者的开源贡献与基础工作！
 
-> 一款基于 **LSPosed** 的微信隐私保护模块，帮助你把指定"密友"从微信各个界面中隐藏起来——会话、通讯录、朋友圈、来电，一键隐身。
 
 > ⚠️ 本仓库仅用于说明项目功能，**不包含源代码**。
 
@@ -18,12 +17,6 @@
 ## 📌 项目简介
 
 **FloatingClouds（浮云）** 微信密友模块。
-
-核心技术栈 / Core Tech Stack：
-
-- **libxposed API 102**（`io.github.libxposed:api:102.0.0`，Apache-2.0）：LSPosed 现代 Hook 注入框架
-- **DexKit 静态扫描**（`org.luckypray:dexkit:2.2.0`，Apache-2.0）：通过 DkBridge / DexKitScanner 对微信 APK 进行 DEX 静态扫描，动态定位混淆类与方法
-- **resolver 声明式规则解析**：混淆类解析引擎（DexKit / 规则系统），硬编码类名与 DexKit 动态扫描混合定位
 
 ## 🧩 功能列表
 
