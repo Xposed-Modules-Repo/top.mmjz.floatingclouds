@@ -7,146 +7,32 @@
 
 > 📮 **联系邮箱**：[mmjzmmww@gmail.com](mailto:mmjzmmww@gmail.com)
 
-> 🙏 **特别感谢**：本项目基于 [Mingyueyixi/MaskWechat](https://github.com/Mingyueyixi/MaskWechat) 全量重构并继续开发而来，**已获得原作者授权**，衷心感谢原作者的开源贡献与基础工作！
+> 🙏 **特别感谢**：浮云沿用了 [Mingyueyixi/MaskWechat](https://github.com/Mingyueyixi/MaskWechat) 的骨架（已获得原作者授权），经过数月的重构与功能新增，现作为独立项目发布，特此致谢大佬 [@Mingyueyixi](https://github.com/Mingyueyixi)。
 
-
-> ⚠️ 本仓库仅用于说明项目功能，**不包含源代码**。
 
 ---
 
 ## 📌 项目简介
 
-**FloatingClouds（浮云）** 微信密友模块。
+**FloatingClouds（浮云）** 微信密友模块，致力成为可靠、流畅的隐私保护助手。
 
 ## 🧩 功能列表
 
-> 以下功能均可在插件设置面板（微信搜索栏输入打开设置指令，或微信「我-设置-关怀模式-长按开启」）中查看与配置，**与插件面板分组一一对应**。详见 [📖 使用教程](TUTORIAL.md)。
+> 功能见插件设置面板；各功能说明见 [📖 FloatingClouds 使用教程（腾讯文档）](https://docs.qq.com/doc/DZHNPRFhNaWxDSVBF)。
 
-### 基础设置
-
-- **启用模块**：总开关，关闭后所有功能均不生效（设置指令除外，防自锁）
-- **配置名单**：管理密友名单（查看、移除、一键清空）
-
-### 核心隐藏（默认全部开启）
-
-- **不显示该聊天**：微信原生机制，独立于总开关
-- **主页会话隐藏**：隐藏主页会话中的密友
-- **通讯录隐藏**：隐藏通讯录列表中的密友
-- **标签内隐藏**：隐藏标签成员及「谁可以看」选择器中的密友
-- **禁止进入聊天**：禁止进入密友聊天界面
-- **禁止查看资料**：禁止进入联系人资料页
-- **隐藏朋友圈入口**：隐藏密友资料页朋友圈入口及时间线中密友动态
-- **隐藏最近转发**：最近转发列表不显示密友
-- **隐藏朋友圈互动**：隐藏密友的点赞 / 评论
-- **隐藏分组图标**：隐藏密友朋友圈的分组图标
-- **隐藏状态页密友**：状态页不显示密友内容
-- **隐藏密友消息通知**：密友被隐藏后自动设置免打扰
-- **阻止电话请求**：拒绝密友的电话联系（含来电悬浮窗拦截）
-- **隐藏主页搜索**：主页搜索不显示密友结果
-- **隐藏存储空间聊天记录**：存储空间页面隐藏聊天记录整条目录
-- **隐藏存储空间缓存**：存储空间页面不显示缓存条目
-- **锁屏隐藏**：锁屏后立即恢复隐藏；若正处密友对话内自动关闭对话窗口
-- **离开对话隐藏**：进入密友对话后返回即恢复隐藏
-- **离开微信隐藏**：按 HOME 离开微信后恢复隐藏；密友对话内离开自动关闭对话窗口
-
-### 社交隐藏
-
-- **隐藏我的朋友圈**：按需隐藏指定朋友圈——自己的或好友的均可（长按相册页任意一条朋友圈加入隐藏、管理已隐藏列表、内置使用教程）
-- **弹窗提示**：长按朋友圈详情时弹出提示框（配合上一项）
-- **隐藏发现页朋友圈入口**：隐藏发现页中的朋友圈入口
-- **隐藏发现页入口**：隐藏视频号 / 看一看 / 小程序入口
-
-### 消息与通知
-
-- **密友消息震动**：隐藏状态下收到密友消息时震动提示（可调强度，支持测试）
-- **微信团队提醒**：密友来消息时以「微信团队」名义发出提醒，点击进入微信团队会话查看
-- **底栏字体加粗**：收到密友消息时底部导航栏文字加粗（可调强度）
-- **圆点提示**：有密友未读消息时搜索框旁显示红点（可调大小）
-- **拦截扫码登录**：拦截扫码登录确认弹窗
-- **屏蔽微信热更新**：阻止 Tinker 热补丁
-
-### 临时解除与恢复
-
-- **多击标题解除**：多击微信标题临时解除隐藏（可调次数与间隔）
-- **长按标题解除**：长按微信标题临时解除隐藏（可调触发时长）
-- 解除后配合「离开对话隐藏 / 离开微信隐藏 / 锁屏隐藏」自动恢复
-
-### 添加密友
-
-- **会话列表长按添加**：主页会话列表长按弹出加入密友菜单
-- **通讯录长按添加**：通讯录列表长按弹出加入密友菜单
-- **菜单显示文字**：自定义长按添加菜单文字
-
-### 提示自定义
-
-- **操作提示**：操作提示总开关（默认关闭）
-- **自定义提示文字**：临时解除 / 加入密友 / 取消密友 / 朋友圈隐藏 提示文字
-
-### 指令自定义
-
-- **打开设置指令**：微信搜索框输入即打开插件设置（固定开启，防自锁）
-- **临时解除指令**：微信搜索框输入即临时解除隐藏
-
-### 用户群组
-
-- **QQ 群与项目链接**：群号一键复制 + 项目主页入口（在面板「用户群组」分组内；入群可反馈问题、获取更新）
-
-### 开发者
-
-- **日志开关**：关闭后插件不再输出任何日志
-- **数据库**：缓存微信数据库（开发者用）
-- **版本详情**：热更新屏蔽状态、拦截记录、版本快照对比
-- **DexKit 适配**：一键扫描微信类名，查看解析缓存状态
-- **清零拦截记录** / **模拟热更新**：热更新调试工具
-- **清空所有配置**：清空全部开关、名单与缓存并重启微信
-- **重启微信**
-
-## 🙏 致谢 / Credits & Acknowledgments
-
-感谢以下开源项目与作者对本项目的支持。
-
-### MaskWechat — 上游基础项目 / Upstream Base Project
-
-- **作者 / Author**：[Mingyueyixi](https://github.com/Mingyueyixi)
-- **用途 / Purpose**：本项目的前身与功能蓝本，基于其全量重构并继续开发
-- **许可证 / License**：上游仓库未附带 LICENSE 文件、未声明正式开源许可证（GitHub 默认保留所有权利）；本项目已获得原作者对继续开发的授权
-- **主页 / Homepage**：https://github.com/Mingyueyixi/MaskWechat
-
-### DexKit
-
-- **作者 / Author**：[LuckyPray](https://github.com/LuckyPray)
-- **用途 / Purpose**：DEX 静态扫描，定位混淆类与方法（DkBridge / DexKitScanner 的底层能力）
-- **许可证 / License**：Apache License 2.0 — https://www.apache.org/licenses/LICENSE-2.0
-- **主页 / Homepage**：https://github.com/LuckyPray/DexKit
-
-### libxposed API
-
-- **作者 / Author**：LSPosed Developers
-- **用途 / Purpose**：LSPosed 现代 Hook 注入 API（Xposed API 102）
-- **许可证 / License**：Apache License 2.0 — https://www.apache.org/licenses/LICENSE-2.0
-- **主页 / Homepage**：https://github.com/libxposed/api
-
-### LSPosed 框架 / LSPosed Framework
-
-- **作者 / Author**：LSPosed Developers
-- **用途 / Purpose**：本模块运行的 Xposed 框架宿主（由用户自行安装，不随本模块分发）
-- **许可证 / License**：GNU General Public License v3.0 — https://www.gnu.org/licenses/gpl-3.0.html
-- **主页 / Homepage**：https://github.com/LSPosed/LSPosed
-
----
 
 ## 📖 使用说明
 
-**快速入口**：微信「我 - 设置 - 关怀模式 - 长按开启」进入设置，或在微信搜索栏输入指令（默认 `#jz#`）打开插件设置面板。
+**设置入口**：微信「我 - 设置 - 关怀模式 - 长按开启」进入设置，或在微信搜索栏输入指令（默认 `#jz#`）打开插件设置面板。
 
-**完整教程**（安装、启用、添加密友、临时解除、常见问题）：👉 [TUTORIAL.md](TUTORIAL.md)
+**完整教程**（安装、启用、添加密友、临时解除、常见问题）：👉 [FloatingClouds 使用教程（腾讯文档）](https://docs.qq.com/doc/DZHNPRFhNaWxDSVBF)
 
 ---
 
 ## 🔧 兼容性与框架
 
-- **支持**：每个版本适配主体不一样，请看版本更新描述（为了避免热更新导致插件功能失效，通常只会适配最新版的前一版微信）
-- **框架**：**102 API** 框架 —— root：[LSPosed](https://lsposed.zip/)、[Vector](https://github.com/JingMatrix/Vector)；免 root：[NPatch](https://github.com/7723mod/NPatch)、[LSPatch](https://github.com/JingMatrix/LSPatch)
+- **适配版本**：请看 [更新日志](https://github.com/Xposed-Modules-Repo/top.mmjz.floatingclouds/releases/latest)
+- **支持框架**：**102 API** 框架 —— root：[LSPosed](https://lsposed.zip/)、[Vector](https://github.com/JingMatrix/Vector)；免 root：[NPatch](https://github.com/7723mod/NPatch)、[LSPatch](https://github.com/JingMatrix/LSPatch)
 
 ---
 
@@ -164,4 +50,8 @@
 
 ---
 
-<sub>浮云 — 让该消失的，安静消失。</sub>
+<sub>浮云一别后，流水十年间。</sub>
+
+---
+
+<sub>本项目使用的开源组件（含 Apache License 2.0 许可组件）保留各自版权与许可证声明，完整第三方声明见项目源码仓库的 `THIRD_PARTY_NOTICES`。</sub>
